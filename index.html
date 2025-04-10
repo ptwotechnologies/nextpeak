@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.3/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="css/aos.css" />
 
@@ -59,7 +63,7 @@
             </li>
             <!-- <li class="nav-item"><a href="attorneys.html" class="nav-link">Attorneys</a></li> -->
             <li class="nav-item">
-              <a href="practice-areas.html" class="nav-link">Services</a>
+              <a href="services.html" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
               <a href="pricing.html" class="nav-link">Pricing</a>
@@ -289,7 +293,7 @@
                 <div class="years d-flex mt-4 mt-md-5">
                   <h4>
                     <span class="number mr-2" data-number="5"></span>
-                    <span>Years of Experienced</span>
+                    <span>Years of Experience</span>
                   </h4>
                 </div>
               </div>
@@ -519,7 +523,9 @@
           <div
             class="col-md-6 half p-3 py-5 pl-md-5 ftco-animate heading-section heading-section-white"
           >
-            <span class="subheading">Booking an Appointment</span>
+            <span class="subheading" style="color: #00000080"
+              >Booking an Appointment</span
+            >
             <h2 class="mb-4">Free Consultation</h2>
             <form action="#" class="consultation">
               <div class="form-group">
@@ -570,100 +576,145 @@
             <h2 class="mb-4">Trusted by Businesses</h2>
           </div>
         </div>
-        <div class="row ftco-animate">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel ftco-owl">
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                  <div class="text">
-                    <p class="mb-4">
-                      Nexpeak’s legal insights have strengthened our business
-                      operations. Their expertise in corporate law ensures
-                      smooth and compliant growth.
+
+        <div
+          class="container py-3"
+          style="background-color: #038bc0; border-radius: 1rem; color: white"
+        >
+          <div id="testimonialCarousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div
+                  class="card shadow-sm rounded-3 p-2"
+                  style="background-color: white; color: #038bc0"
+                >
+                  <div class="quotes display-2" style="color: #038bc0">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                      "Nexpeak’s legal insights strengthen our business. Their
+                      corporate law expertise supports smooth, compliant
+                      growth."
                     </p>
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="user-img"
-                        style="background-image: url(images/person_1.jpg)"
-                      ></div>
-                      <div class="pl-3">
-                        <p class="name">Kathiyawad Ventures</p>
-                        <span class="position">Business Group</span>
+                    <div class="d-flex align-items-center pt-4">
+                      <img src="./images/person_4.jpg" alt="" />
+                      <div>
+                        <h5 class="card-title fw-bold" style="color: #038bc0">
+                          Kathiyawad Ventures
+                        </h5>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                  <div class="text">
-                    <p class="mb-4">
-                      Nexpeak’s advisory and contract drafting services provide
-                      the legal confidence we need. Their precision and
-                      strategic approach safeguard our interests.
+              <div class="carousel-item">
+                <div
+                  class="card shadow-sm rounded-3 p-2"
+                  style="background-color: white; color: #038bc0"
+                >
+                  <div class="quotes display-2" style="color: #038bc0">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                      "Nexpeak’s contract services greatly boost our legal
+                      confidence. Their strategic advice ensures our interests
+                      are protected."
                     </p>
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="user-img"
-                        style="background-image: url(images/person_2.jpg)"
-                      ></div>
-                      <div class="pl-3">
-                        <p class="name">Capzow</p>
-                        <span class="position">Tech Startup</span>
+                    <div class="d-flex align-items-center pt-4">
+                      <img src="./images/person_3.jpg" alt="" />
+                      <div>
+                        <h5 class="card-title fw-bold" style="color: #038bc0">
+                          Capzow Solutions
+                        </h5>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                  <div class="text">
-                    <p class="mb-4">
-                      Nexpeak has been instrumental in managing our contracts
-                      and intellectual property. Their expertise ensures our
-                      agreements are airtight, and our innovations are
-                      well-protected, giving us the confidence to scale
-                      securely.
+              <div class="carousel-item">
+                <div
+                  class="card shadow-sm rounded-3 p-2"
+                  style="background-color: white; color: #038bc0"
+                >
+                  <div class="quotes display-2" style="color: #038bc0">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                      "Nexpeak has streamlined our contracts and IP. Their
+                      expertise helps us grow securely and stay legally
+                      protected."
                     </p>
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="user-img"
-                        style="background-image: url(images/person_3.jpg)"
-                      ></div>
-                      <div class="pl-3">
-                        <p class="name">PTWO Technologies</p>
-                        <span class="position">Software Firm</span>
+                    <div class="d-flex align-items-center pt-4">
+                      <img src="./images/person_2.jpg" alt="" />
+                      <div>
+                        <h5 class="card-title fw-bold" style="color: #038bc0">
+                          PTWO Technologies
+                        </h5>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                  <div class="text">
-                    <p class="mb-4">
-                      Nexpeak’s legal advisory has been a game-changer for us.
-                      Their strategic guidance on contracts and compliance has
-                      streamlined our operations, allowing us to focus on growth
-                      with confidence.
+              <div class="carousel-item">
+                <div
+                  class="card shadow-sm rounded-3 p-2"
+                  style="background-color: white; color: #038bc0"
+                >
+                  <div class="quotes display-2" style="color: #038bc0">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                      "Nexpeak’s legal advice transformed our process. Their
+                      guidance on contracts and compliance drives confident
+                      growth."
                     </p>
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="user-img"
-                        style="background-image: url(images/person_4.jpg)"
-                      ></div>
-                      <div class="pl-3">
-                        <p class="name">Level Upwards</p>
-                        <span class="position">Growth Consultancy</span>
+                    <div class="d-flex align-items-center pt-4">
+                      <img src="./images/person_1.jpg" alt="" />
+                      <div>
+                        <h5 class="card-title fw-bold" style="color: #038bc0">
+                          Level Upwards
+                        </h5>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+                style="filter: invert(100%)"
+              ></span>
+              <span class="visually-hidden"></span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+                style="filter: invert(100%)"
+              ></span>
+              <span class="visually-hidden"></span>
+            </button>
           </div>
         </div>
       </div>
@@ -783,20 +834,18 @@
       </div>
     </section>
 
-    <footer
-      class="ftco-footer ftco-bg-dark ftco-section"
-      style="background-color: rgb(70, 66, 94)"
-    >
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <h2 class="logo">
-                <a href="#"
-                  ><img
+                <a href="#">
+                  <img
                     src="images/logo.png"
                     style="height: 80px; width: 160px; background-color: #fff"
-                /></a>
+                  />
+                </a>
               </h2>
               <p>
                 Nexpeak is a client-focused legal firm offering expert counsel
@@ -819,86 +868,71 @@
               </ul>
             </div>
           </div>
+
           <div class="col-md">
             <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Practice Areas</h2>
+              <h2 class="ftco-heading-2">Our Services</h2>
               <ul class="list-unstyled">
                 <li>
                   <a href="#" class="py-1 d-block"
-                    ><span class="ion-ios-arrow-forward mr-3"></span>Family
-                    Law</a
+                    ><span class="ion-ios-arrow-forward mr-3"></span>Startup &
+                    Incorporation</a
                   >
                 </li>
                 <li>
                   <a href="#" class="py-1 d-block"
-                    ><span class="ion-ios-arrow-forward mr-3"></span>Business
-                    Law</a
+                    ><span class="ion-ios-arrow-forward mr-3"></span>Contract
+                    Drafting</a
                   >
                 </li>
                 <li>
                   <a href="#" class="py-1 d-block"
-                    ><span class="ion-ios-arrow-forward mr-3"></span>Insurance
-                    Law</a
+                    ><span class="ion-ios-arrow-forward mr-3"></span>IPR & Brand
+                    Protection</a
                   >
                 </li>
                 <li>
                   <a href="#" class="py-1 d-block"
-                    ><span class="ion-ios-arrow-forward mr-3"></span>Criminal
-                    Law</a
+                    ><span class="ion-ios-arrow-forward mr-3"></span>Compliance
+                    Management</a
                   >
                 </li>
                 <li>
                   <a href="#" class="py-1 d-block"
-                    ><span class="ion-ios-arrow-forward mr-3"></span>Drug
-                    Offenses</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="py-1 d-block"
-                    ><span class="ion-ios-arrow-forward mr-3"></span>Fire
-                    Accident</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="py-1 d-block"
-                    ><span class="ion-ios-arrow-forward mr-3"></span>Employment
-                    Law</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="py-1 d-block"
-                    ><span class="ion-ios-arrow-forward mr-3"></span>Property
-                    Law</a
+                    ><span class="ion-ios-arrow-forward mr-3"></span>Tax &
+                    Financial Compliance</a
                   >
                 </li>
               </ul>
             </div>
           </div>
+
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Have a Questions?</h2>
+              <h2 class="ftco-heading-2">Contact Us</h2>
               <div class="block-23 mb-3">
                 <ul>
                   <li>
-                    <span class="icon icon-map-marker"></span>
-                    <span class="text">Two Horizon, Gurugram, 122002</span>
+                    <span class="icon icon-map-marker"></span
+                    ><span class="text">Two Horizon, Gurugram, 122002</span>
                   </li>
                   <li>
                     <a href="tel:+918766270884"
-                      ><span class="icon icon-phone"></span>
-                      <span class="text">+91 8766270884</span></a
+                      ><span class="icon icon-phone"></span
+                      ><span class="text">+91 8766270884</span></a
                     >
                   </li>
                   <li>
                     <a href="mailto:info@nexpeak.life"
-                      ><span class="icon icon-envelope"></span>
-                      <span class="text">info@nexpeak.life</span></a
+                      ><span class="icon icon-envelope"></span
+                      ><span class="text">info@nexpeak.life</span></a
                     >
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Business Hours</h2>
@@ -917,6 +951,7 @@
             </div>
           </div>
         </div>
+
         <div class="row">
           <div class="col-md-12 text-center">
             <p>

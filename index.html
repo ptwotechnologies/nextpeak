@@ -23,6 +23,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.3/swiper-bundle.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="css/aos.css" />
 
@@ -31,6 +32,14 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
   </head>
   <body>
     <nav
@@ -391,6 +400,12 @@
               >Booking an Appointment</span
             >
             <h2 class="mb-4">Free Consultation</h2>
+            <p class="mb-4">
+              Contact:
+              <a href="tel:+918799762249" style="color: #ffffff"
+                >+91-8799762249</a
+              >
+            </p>
             <form action="#" class="consultation">
               <div class="form-group">
                 <input
@@ -404,6 +419,13 @@
                   type="text"
                   class="form-control"
                   placeholder="Your Email"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Your Contact Number"
                 />
               </div>
               <div class="form-group">
@@ -441,148 +463,413 @@
           </div>
         </div>
 
-        <div
-          class="container py-3"
-          style="background-color: #038bc0; border-radius: 1rem; color: white"
-        >
-          <div id="testimonialCarousel" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div
-                  class="card shadow-sm rounded-3 p-2"
-                  style="background-color: white; color: #038bc0"
-                >
-                  <div class="quotes display-2" style="color: #038bc0">
-                    <i class="bi bi-quote"></i>
-                  </div>
-                  <div class="card-body">
-                    <p class="card-text">
-                      "Nexpeak’s legal insights strengthen our business. Their
-                      corporate law expertise supports smooth, compliant
-                      growth."
-                    </p>
-                    <div class="d-flex align-items-center pt-4">
-                      <img src="./images/person_4.jpg" alt="" />
-                      <div>
-                        <h5 class="card-title fw-bold" style="color: #038bc0">
-                          Kathiyawad Ventures
-                        </h5>
+        <div class="bg-light mb-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div
+                id="testimonialCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <!-- Testimonials with consistent length -->
+                  <div class="carousel-item active">
+                    <div class="testimonial-card p-4 p-md-5">
+                      <i
+                        class="bi bi-quote quote-icon position-absolute top-0 start-0 mt-3 ms-3"
+                      ></i>
+                      <div class="text-center mb-4">
+                        <img
+                          src="/images/person_1.jpg"
+                          alt="Avatar"
+                          class="avatar mb-3 rounded-circle"
+                        />
+                        <h5 class="mb-1">Kathiyawad Ventures</h5>
+                        <p class="text-muted mb-0">Business Operations</p>
                       </div>
+                      <p class="lead text-center mb-0">
+                        "Nexpeak's legal insights have strengthened our business
+                        operations. Their expertise in corporate law ensures
+                        smooth and compliant growth while providing the
+                        strategic guidance we need for long-term success."
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial-card p-4 p-md-5">
+                      <i
+                        class="bi bi-quote quote-icon position-absolute top-0 start-0 mt-3 ms-3"
+                      ></i>
+                      <div class="text-center mb-4">
+                        <img
+                          src="/images/person_2.jpg"
+                          alt="Avatar"
+                          class="avatar mb-3 rounded-circle"
+                        />
+                        <h5 class="mb-1">Capzow</h5>
+                        <p class="text-muted mb-0">Legal Advisory</p>
+                      </div>
+                      <p class="lead text-center mb-0">
+                        "Nexpeak's advisory and contract drafting services
+                        provide the legal confidence we need. Their precision
+                        and strategic approach safeguard our interests and help
+                        us navigate complex legal challenges with ease and
+                        confidence."
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial-card p-4 p-md-5">
+                      <i
+                        class="bi bi-quote quote-icon position-absolute top-0 start-0 mt-3 ms-3"
+                      ></i>
+                      <div class="text-center mb-4">
+                        <img
+                          src="/images/person_3.jpg"
+                          alt="Avatar"
+                          class="avatar mb-3 rounded-circle"
+                        />
+                        <h5 class="mb-1">PTWO Technologies</h5>
+                        <p class="text-muted mb-0">Contract & IP Management</p>
+                      </div>
+                      <p class="lead text-center mb-0">
+                        "Nexpeak has been instrumental in managing our contracts
+                        and intellectual property. Their expertise ensures our
+                        agreements are airtight, and our innovations are
+                        well-protected, giving us the confidence to scale
+                        securely."
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial-card p-4 p-md-5">
+                      <i
+                        class="bi bi-quote quote-icon position-absolute top-0 start-0 mt-3 ms-3"
+                      ></i>
+                      <div class="text-center mb-4">
+                        <img
+                          src="/images/person_4.jpg"
+                          alt="Avatar"
+                          class="avatar mb-3 rounded-circle"
+                        />
+                        <h5 class="mb-1">Level Upwards</h5>
+                        <p class="text-muted mb-0">Legal Advisory</p>
+                      </div>
+                      <p class="lead text-center mb-0">
+                        "Nexpeak's legal advisory has been a game-changer for
+                        us. Their strategic guidance on contracts and compliance
+                        has streamlined our operations, allowing us to focus on
+                        growth with confidence and peace of mind."
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial-card p-4 p-md-5">
+                      <i
+                        class="bi bi-quote quote-icon position-absolute top-0 start-0 mt-3 ms-3"
+                      ></i>
+                      <div class="text-center mb-4">
+                        <img
+                          src="/images/person_5.jpg"
+                          alt="Avatar"
+                          class="avatar mb-3 rounded-circle"
+                        />
+                        <h5 class="mb-1">Soujanya</h5>
+                        <p class="text-muted mb-0">
+                          Director, Cyclesync Technologies
+                        </p>
+                      </div>
+                      <p class="lead text-center mb-0">
+                        "NexPeak has been a game-changer for our startup. From
+                        incorporation to ongoing compliance, their team ensured
+                        every legal detail was handled seamlessly. We trust them
+                        not just as legal advisors, but as partners in our
+                        growth."
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial-card p-4 p-md-5">
+                      <i
+                        class="bi bi-quote quote-icon position-absolute top-0 start-0 mt-3 ms-3"
+                      ></i>
+                      <div class="text-center mb-4">
+                        <img
+                          src="/images/person_6.jpg"
+                          alt="Avatar"
+                          class="avatar mb-3 rounded-circle"
+                        />
+                        <h5 class="mb-1">Pooja Sharma</h5>
+                        <p class="text-muted mb-0">Founder, TheBestDay</p>
+                      </div>
+                      <p class="lead text-center mb-0">
+                        "Bespeak played a key role in protecting our brand
+                        identity. From trademark registration to guiding us on
+                        IP strategy, their legal insight ensured TheBestDay is
+                        not just growing — it's secured. Their approach made
+                        complex IPR processes simple."
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial-card p-4 p-md-5">
+                      <i
+                        class="bi bi-quote quote-icon position-absolute top-0 start-0 mt-3 ms-3"
+                      ></i>
+                      <div class="text-center mb-4">
+                        <img
+                          src="/images/person_7.jpg"
+                          alt="Avatar"
+                          class="avatar mb-3 rounded-circle"
+                        />
+                        <h5 class="mb-1">Akshay Dogra</h5>
+                        <p class="text-muted mb-0">
+                          Director, PTWO Technologies
+                        </p>
+                      </div>
+                      <p class="lead text-center mb-0">
+                        "Whether it was drafting agreements, handling
+                        registrations, ensuring compliances or advisory —
+                        NexPeak delivered with professionalism and speed. Their
+                        subscription model also made it very affordable for our
+                        early-stage company."
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial-card p-4 p-md-5">
+                      <i
+                        class="bi bi-quote quote-icon position-absolute top-0 start-0 mt-3 ms-3"
+                      ></i>
+                      <div class="text-center mb-4">
+                        <img
+                          src="/images/person_8.jpg"
+                          alt="Avatar"
+                          class="avatar mb-3 rounded-circle"
+                        />
+                        <h5 class="mb-1">Aniruddha Sathe</h5>
+                        <p class="text-muted mb-0">
+                          Founder, Parikalpna Technologies LLP
+                        </p>
+                      </div>
+                      <p class="lead text-center mb-0">
+                        "As a creative design firm, IP protection is critical.
+                        NexPeak helped us safeguard our designs, draft client
+                        contracts, and stay compliant — making legal simple and
+                        stress-free for our growing business and creative team."
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial-card p-4 p-md-5">
+                      <i
+                        class="bi bi-quote quote-icon position-absolute top-0 start-0 mt-3 ms-3"
+                      ></i>
+                      <div class="text-center mb-4">
+                        <img
+                          src="/images/person_5.jpg"
+                          alt="Avatar"
+                          class="avatar mb-3 rounded-circle"
+                        />
+                        <h5 class="mb-1">Tapan</h5>
+                        <p class="text-muted mb-0">
+                          Founder, Prismpath Mantra LLP
+                        </p>
+                      </div>
+                      <p class="lead text-center mb-0">
+                        "For a branding and advertising agency, clear contracts
+                        and content rights matter. NexPeak streamlined our
+                        agreements, NDAs, and IP usage policies — allowing us to
+                        focus on storytelling, not legal worries or potential
+                        conflicts."
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial-card p-4 p-md-5">
+                      <i
+                        class="bi bi-quote quote-icon position-absolute top-0 start-0 mt-3 ms-3"
+                      ></i>
+                      <div class="text-center mb-4">
+                        <img
+                          src="/images/person_6.jpg"
+                          alt="Avatar"
+                          class="avatar mb-3 rounded-circle"
+                        />
+                        <h5 class="mb-1">Ariz Malik</h5>
+                        <p class="text-muted mb-0">
+                          Founder, Assetsphere Ventures
+                        </p>
+                      </div>
+                      <p class="lead text-center mb-0">
+                        "As a startup incubator, we needed end-to-end legal
+                        guidance — from company structuring to startup due
+                        diligence. NexPeak's support has been pivotal in
+                        creating a strong legal foundation for our portfolio
+                        startups and investors."
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial-card p-4 p-md-5">
+                      <i
+                        class="bi bi-quote quote-icon position-absolute top-0 start-0 mt-3 ms-3"
+                      ></i>
+                      <div class="text-center mb-4">
+                        <img
+                          src="/images/person_4.jpg"
+                          alt="Avatar"
+                          class="avatar mb-3 rounded-circle"
+                        />
+                        <h5 class="mb-1">Kiran Kumar Doodhi</h5>
+                        <p class="text-muted mb-0">Founder, Instad Digital</p>
+                      </div>
+                      <p class="lead text-center mb-0">
+                        "As a platform in the digital payments space, our legal
+                        needs are complex. NexPeak has been a true partner —
+                        ensuring our contracts are airtight, handling data
+                        privacy compliance and IP protection. "
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial-card p-4 p-md-5">
+                      <i
+                        class="bi bi-quote quote-icon position-absolute top-0 start-0 mt-3 ms-3"
+                      ></i>
+                      <div class="text-center mb-4">
+                        <img
+                          src="/images/person_8.jpg"
+                          alt="Avatar"
+                          class="avatar mb-3 rounded-circle"
+                        />
+                        <h5 class="mb-1">Anchal Dogra</h5>
+                        <p class="text-muted mb-0">
+                          Founder, Arulyog Wellbeing LLP
+                        </p>
+                      </div>
+                      <p class="lead text-center mb-0">
+                        "NexPeak ensures our yoga and wellness business stays
+                        compliant with health sector regulations, service
+                        agreements, and licensing. Their legal clarity helps us
+                        focus fully on healing and wellbeing across all our
+                        service offerings."
+                      </p>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="carousel-item">
-                <div
-                  class="card shadow-sm rounded-3 p-2"
-                  style="background-color: white; color: #038bc0"
+                <!-- Fixed navigation controls -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#testimonialCarousel"
+                  data-bs-slide="prev"
                 >
-                  <div class="quotes display-2" style="color: #038bc0">
-                    <i class="bi bi-quote"></i>
-                  </div>
-                  <div class="card-body">
-                    <p class="card-text">
-                      "Nexpeak’s contract services greatly boost our legal
-                      confidence. Their strategic advice ensures our interests
-                      are protected."
-                    </p>
-                    <div class="d-flex align-items-center pt-4">
-                      <img src="./images/person_3.jpg" alt="" />
-                      <div>
-                        <h5 class="card-title fw-bold" style="color: #038bc0">
-                          Capzow Solutions
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden"></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#testimonialCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden"></span>
+                </button>
 
-              <div class="carousel-item">
-                <div
-                  class="card shadow-sm rounded-3 p-2"
-                  style="background-color: white; color: #038bc0"
-                >
-                  <div class="quotes display-2" style="color: #038bc0">
-                    <i class="bi bi-quote"></i>
-                  </div>
-                  <div class="card-body">
-                    <p class="card-text">
-                      "Nexpeak has streamlined our contracts and IP. Their
-                      expertise helps us grow securely and stay legally
-                      protected."
-                    </p>
-                    <div class="d-flex align-items-center pt-4">
-                      <img src="./images/person_2.jpg" alt="" />
-                      <div>
-                        <h5 class="card-title fw-bold" style="color: #038bc0">
-                          PTWO Technologies
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div
-                  class="card shadow-sm rounded-3 p-2"
-                  style="background-color: white; color: #038bc0"
-                >
-                  <div class="quotes display-2" style="color: #038bc0">
-                    <i class="bi bi-quote"></i>
-                  </div>
-                  <div class="card-body">
-                    <p class="card-text">
-                      "Nexpeak’s legal advice transformed our process. Their
-                      guidance on contracts and compliance drives confident
-                      growth."
-                    </p>
-                    <div class="d-flex align-items-center pt-4">
-                      <img src="./images/person_1.jpg" alt="" />
-                      <div>
-                        <h5 class="card-title fw-bold" style="color: #038bc0">
-                          Level Upwards
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
+                <!-- Fixed indicator count -->
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="5"
+                    aria-label="Slide 6"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="6"
+                    aria-label="Slide 7"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="7"
+                    aria-label="Slide 8"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="8"
+                    aria-label="Slide 9"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="9"
+                    aria-label="Slide 10"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="10"
+                    aria-label="Slide 11"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="11"
+                    aria-label="Slide 12"
+                  ></button>
                 </div>
               </div>
             </div>
-
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#testimonialCarousel"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-                style="filter: invert(100%)"
-              ></span>
-              <span class="visually-hidden"></span>
-            </button>
-
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#testimonialCarousel"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-                style="filter: invert(100%)"
-              ></span>
-              <span class="visually-hidden"></span>
-            </button>
-          </div>
+          
         </div>
       </div>
     </section>
+
+    <!-- Initialize the carousel with proper settings -->
 
     <!-- <section class="ftco-section bg-light">
       <div class="container">
@@ -781,15 +1068,29 @@
                     ><span class="text">Two Horizon, Gurugram, 122002</span>
                   </li>
                   <li>
-                    <a href="tel:+918766270884"
+                    <span class="icon icon-map-marker"></span
+                    ><span class="text"
+                      >Vivekanand Puri, Shashtri Nagar, New Delhi, 110052
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon icon-map-marker"></span
+                    ><span class="text"
+                      >Statesment House, Barakhamba Road, Cannaught Place, Delhi
+                      110001</span
+                    >
+                  </li>
+
+                  <li>
+                    <a href="tel:+918799762249"
                       ><span class="icon icon-phone"></span
-                      ><span class="text">+91 8766270884</span></a
+                      ><span class="text">+91 8799762249</span></a
                     >
                   </li>
                   <li>
-                    <a href="mailto:info@nexpeak.life"
+                    <a href="mailto:nexpeaklawfirm@gmail.com"
                       ><span class="icon icon-envelope"></span
-                      ><span class="text">info@nexpeak.life</span></a
+                      ><span class="text">nexpeaklawfirm@gmail.com</span></a
                     >
                   </li>
                 </ul>
@@ -825,10 +1126,10 @@
               </script>
               Nexpeak. All rights reserved. Designed by
               <a
-                href="https://aetherweb.in"
+                href="https://aetherweb.life"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Aetherweb LLP</a
+                >Aetherweb Technologies LLP</a
               >.
             </p>
           </div>

@@ -152,7 +152,7 @@
                 every stage.
               </p>
               <p>
-                <a href="#" class="btn btn-primary py-3 px-4"
+                <a href="contact.html" class="btn btn-primary py-3 px-4"
                   >Free Consultation</a
                 >
               </p>
@@ -1095,21 +1095,27 @@
 
         <div class="row">
           <div class="col-md-12 text-center">
+            <!-- Legal links -->
+            <p class="legal-links">
+              <a href="privacy-policy.html">Privacy Policy</a> | 
+              <a href="terms-condition.html">Terms & Conditions</a> | 
+              <a href="cookie-policy.html">Cookie Policy</a>
+            </p>
+            
+            <!-- Copyright -->
             <p>
-              &copy;
+              &copy; 
               <script>
                 document.write(new Date().getFullYear());
-              </script>
-              Nexpeak. All rights reserved. Designed by
-              <a
-                href="https://aetherweb.life"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Aetherweb Technologies LLP</a
-              >.
+              </script> 
+              Nexpeak. All rights reserved. Designed by 
+              <a href="https://aetherweb.life" target="_blank" rel="noopener noreferrer">
+                Aetherweb Technologies LLP
+              </a>
             </p>
           </div>
         </div>
+        
       </div>
     </footer>
 
@@ -1138,6 +1144,25 @@
       </svg>
     </div>
 
+    <!-- Disclaimer Popup -->
+<div id="disclaimer-popup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; display: flex; align-items: center; justify-content: center;">
+  <div style="background: #fff; max-width: 800px; padding: 30px; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.3);">
+    <h2 style="color: #008bbf;">Disclaimer</h2>
+    <p style="font-size: 15px; line-height: 1.6; color: #333;">
+      The Bar Council of India does not permit advertisement or solicitation by advocates. By accessing this website, you acknowledge and confirm that you are seeking information relating to NEXPEAK LEGAL PARTNERS LLP (hereinafter referred to as “NEXPEAK”), of your own accord and that there has been no form of solicitation, advertisement, or inducement by NEXPEAK, or its members. The content of this website is for informational purposes only and should not be interpreted as soliciting or advertising. No material/information provided on this website should be construed as legal advice. NEXPEAK shall not be liable for the consequences of any action taken by relying on the material/information provided on this website.
+    </p>
+    <label style="display: block; margin-top: 20px;">
+      <input type="checkbox" id="accept-disclaimer" />
+      I agree and acknowledge the above
+    </label>
+    <button id="proceed-button" style="background-color: #008bbf; color: #fff; padding: 10px 20px; border: none; border-radius: 4px; margin-top: 20px; cursor: not-allowed;" disabled>
+      Proceed to Website
+    </button>
+  </div>
+</div>
+
+
+
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -1153,5 +1178,28 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const popup = document.getElementById("disclaimer-popup");
+        const checkbox = document.getElementById("accept-disclaimer");
+        const proceedBtn = document.getElementById("proceed-button");
+    
+        // Check if disclaimer already accepted
+        if (localStorage.getItem("disclaimerAccepted")) {
+          popup.style.display = "none";
+        }
+    
+        checkbox.addEventListener("change", function () {
+          proceedBtn.disabled = !this.checked;
+          proceedBtn.style.cursor = this.checked ? "pointer" : "not-allowed";
+        });
+    
+        proceedBtn.addEventListener("click", function () {
+          localStorage.setItem("disclaimerAccepted", "true");
+          popup.style.display = "none";
+        });
+      });
+    </script>
+    
   </body>
 </html>

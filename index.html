@@ -1179,33 +1179,40 @@
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
     <script>
-   document.addEventListener("DOMContentLoaded", function () {
-    const popup = document.getElementById("disclaimer-popup");
-    const checkbox = document.getElementById("accept-disclaimer");
-    const proceedBtn = document.getElementById("proceed-button");
-
-    // Check if disclaimer is already accepted
-    if (localStorage.getItem("disclaimerAccepted")) {
-        popup.style.display = "none";
-        proceedBtn.disabled = false;
-        proceedBtn.style.cursor = "pointer";
-    } else {
-        popup.style.display = "flex";
-        proceedBtn.disabled = true;
-        proceedBtn.style.cursor = "not-allowed";
-    }
-
-    checkbox.addEventListener("change", function () {
-        proceedBtn.disabled = !this.checked;
-        proceedBtn.style.cursor = this.checked ? "pointer" : "not-allowed";
-    });
-
-    proceedBtn.addEventListener("click", function () {
-        localStorage.setItem("disclaimerAccepted", "true");
-        popup.style.display = "none";
-    });
-});
-  </script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const popup = document.getElementById("disclaimer-popup");
+          const checkbox = document.getElementById("accept-disclaimer");
+          const proceedBtn = document.getElementById("proceed-button");
+      
+          // Check if disclaimer is already accepted
+          if (localStorage.getItem("disclaimerAccepted")) {
+              // If accepted previously, hide popup and enable proceed button
+              popup.style.display = "none";
+              proceedBtn.disabled = false;
+              proceedBtn.style.cursor = "pointer";
+              checkbox.checked = true; // Ensure checkbox is visually checked
+          } else {
+              // If not accepted previously, show popup and disable proceed button
+              popup.style.display = "flex";
+              proceedBtn.disabled = true;
+              proceedBtn.style.cursor = "not-allowed";
+              checkbox.checked = false; // Ensure checkbox is visually unchecked
+          }
+      
+          // Add event listener for checkbox change
+          checkbox.addEventListener("change", function () {
+              proceedBtn.disabled = !this.checked;
+              proceedBtn.style.cursor = this.checked ? "pointer" : "not-allowed";
+          });
+      
+          // Add event listener for proceeding after acceptance
+          proceedBtn.addEventListener("click", function () {
+              localStorage.setItem("disclaimerAccepted", "true");
+              popup.style.display = "none";
+          });
+      });
+      </script>
+      
     
   </body>
 </html>

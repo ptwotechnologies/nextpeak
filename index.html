@@ -1179,36 +1179,33 @@
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
     <script>
- document.addEventListener("DOMContentLoaded", function () {
-  const popup = document.getElementById("disclaimer-popup");
-  const checkbox = document.getElementById("accept-disclaimer");
-  const proceedBtn = document.getElementById("proceed-button");
+   document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("disclaimer-popup");
+    const checkbox = document.getElementById("accept-disclaimer");
+    const proceedBtn = document.getElementById("proceed-button");
 
-  // Check if disclaimer already accepted
-  if (localStorage.getItem("disclaimerAccepted")) {
-    popup.style.display = "none";
-  }
-
-  // Function to update button state
-  function updateButtonState() {
-    proceedBtn.disabled = !checkbox.checked;
-    proceedBtn.style.cursor = checkbox.checked ? "pointer" : "not-allowed";
-  }
-
-  // Set initial button state based on checkbox
-  updateButtonState();
-
-  // Add event listener for checkbox
-  checkbox.addEventListener("change", updateButtonState);
-
-  // Add event listener for button
-  proceedBtn.addEventListener("click", function () {
-    if (checkbox.checked) {
-      localStorage.setItem("disclaimerAccepted", "true");
-      popup.style.display = "none";
+    // Check if disclaimer is already accepted
+    if (localStorage.getItem("disclaimerAccepted")) {
+        popup.style.display = "none";
+        proceedBtn.disabled = false;
+        proceedBtn.style.cursor = "pointer";
+    } else {
+        popup.style.display = "flex";
+        proceedBtn.disabled = true;
+        proceedBtn.style.cursor = "not-allowed";
     }
-  });
-});</script>
+
+    checkbox.addEventListener("change", function () {
+        proceedBtn.disabled = !this.checked;
+        proceedBtn.style.cursor = this.checked ? "pointer" : "not-allowed";
+    });
+
+    proceedBtn.addEventListener("click", function () {
+        localStorage.setItem("disclaimerAccepted", "true");
+        popup.style.display = "none";
+    });
+});
+  </script>
     
   </body>
 </html>

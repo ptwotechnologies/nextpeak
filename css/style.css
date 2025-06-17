@@ -12689,7 +12689,7 @@ textarea.form-control {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
   border: 4px solid #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
